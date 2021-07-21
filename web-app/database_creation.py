@@ -4,7 +4,7 @@ import pandas as pd
 
 con = sqlite3.connect('exoplanet.db')
 c = con.cursor()
-c.execute('''DROP table exoplanet_table''').fetchall()
+c.execute('''DROP table exoplanet_table''')
 
 
 
