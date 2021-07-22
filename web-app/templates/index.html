@@ -18,8 +18,7 @@
 <body>
 
   <!-- Start Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+  <nav class="navbar navbar-expand-lg">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -30,33 +29,15 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/tmsteph/exoplanet-star-analysis">Github</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" target="_blank" href="https://github.com/tmsteph/exoplanet-star-analysis">Github</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </nav>
 
 <!--End Navbar-->
 
-
+<div class="container"> 
 <div class="jumbotron">
   <h1 class="display-4">Exoplanet Star Analysis </h1>
   <p class="lead">In this Project, We used the Nasa Exoplanet archive, as well as the PHL Habitable Exoplanet Catalog, in order to use machine learning to Identify habitable planets. Using this data, we analyze the stars these planets orbit around in order to narrow down our search for life!</p>
@@ -64,154 +45,116 @@
   <hr class="my-4">
   <p>The first confirmed discovery of an exoplanet occured in 1992. Since then, the number has doubled every 27 months! Machine learning will be neccesary in the future as the rate of information gathering continues to outpaces the ability of humans to process manually. We plan to help!</p>
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="https://github.com/tmsteph/exoplanet-star-analysis" role="button">Learn more</a>
+    <a class="btn btn-primary btn-lg" target="_blank" href="https://github.com/tmsteph/exoplanet-star-analysis" role="button">Learn more</a>
   </p>
-
-
-
 </div>
 
-<!--2x2 columns for graphs -->
 <div class="row">
-  <div class="col-lg-12">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">What kind of stars do habitable planets orbit? </h5>
+  <div class="col-md-12 large">
+        <h5 >What kind of stars do habitable planets orbit? </h5>
         <img src="/static/img/temp_mass_habitability.png">
-        <p class="card-text">This is a great introduction into what inspired this project! Here we can see that there is a "Goldilocks Zone" for star size and effective temperature.</p>
-        <p class="card-text">Star mass clearly affects the habitability of planets in a direct way. There seems to be a hard lower limit just below .50 star mass, and while the number drops off significantly above 1 solar mass, the outlier suggests that larger planets can exist up to 1.75 even if they are rare.</p>
-      </div>
-    </div>
+        <p>This is a great introduction into what inspired this project! Here we can see that there is a "Goldilocks Zone" for star size and effective temperature.</p>
+        <p>Star mass clearly affects the habitability of planets in a direct way. There seems to be a hard lower limit just below .50 star mass, and while the number drops off significantly above 1 solar mass, the outlier suggests that larger planets can exist up to 1.75 even if they are rare.</p>
   </div>
-
+</div>
 
   <div class="jumbotron">
-  <h1 class="display-4">Machine learning </h1>
-  <p class="lead">It's all good and well that scientists are able to identify these planets by hand. But we see the need in the future for machines to do the heavy lifting in astronomy!</p>
-  <p class="lead"> Thats why we took what has already been indentified and tested many machine learning models and were sucessful in both finding and identifying these planets with great accuracy.</p>
- 
-  <hr class="my-4">
-  
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="https://github.com/tmsteph/exoplanet-star-analysis/blob/main/exoplanets-analysis.ipynb" role="button">Link to Machine learning Notebook</a>
-  </p>
-
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="https://github.com/tmsteph/exoplanet-star-analysis" role="button">link to Calvin's notebook</a>
-  </p>
-
+    <h1 class="display-4">Machine learning </h1>
+    <p class="lead">It's all good and well that scientists are able to identify these planets by hand. But we see the need in the future for machines to do the heavy lifting in astronomy!</p>
+    <p class="lead"> Thats why we took what has already been indentified and tested many machine learning models and were sucessful in both finding and identifying these planets with great accuracy.</p>
+    <hr class="my-4">
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" target="_blank" href="https://github.com/tmsteph/exoplanet-star-analysis/blob/main/exoplanets-analysis.ipynb" role="button">Link to Machine learning Notebook</a>
+    </p>
   </div>
 <!-- End second Jumbotron-->
 
-
+<div class="row">
   <div class="col-lg-12">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">XGBoost</h5>
-        <p class="card-text"> After trying all the standard methods of machine learning, we came across XGboost. </p>
+        <h5 >XGBoost</h5>
+        <p> After trying all the standard methods of machine learning, we came across XGboost. </p>
         <p>This library is an implimentation of "gradiant boosted decision trees". This means that it uses an ensemble of smaller decision trees in series, each enhancing the final model. </p>
         <p>What is special about XGBoost is the speed without losing accuracy! XGboost employs regularization, split Finding, and system design techniques to become one of the most popular libraries used by data scientists today.</p>
-      </div>
-    </div>
+  </div>
+</div>
   
 
 
 <div class="row">
   <div class="col-lg-12">
-    <div class="card">
-      <div class="card-body">
-        <h1 class="card-title">Star Analysis</h1>
-        <p class="card-text">After we used machine learning to find and identify these planets, we used that information to do further analysis with traditional data science methods. </p>
+    <hr>
+        <h1>Star Analysis</h1>
+        <p>After we used machine learning to find and identify these planets, we used that information to do further analysis with traditional data science methods. </p>
+    <hr>
       </div>
-    </div>
-  </div>
 </div>
 
 <div class = "row">
-  <div class="col-lg-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Planets in System per Distance from Earth</h5>
+  <div class="col-md-6">
+
+        <h5>Planets in System per Distance from Earth</h5>
         <img src="/static/img/planets_per_system_distance.png">
-        <p class="card-text">Star systems tend to have more planets the further away they are! There are close systems with many planets. but they are more rare.</p>
-      </div>
-    </div>
+        <p>Star systems tend to have more planets the further away they are! There are close systems with many planets. but they are more rare.</p>
+
   </div>
 
-  <div class="col-lg-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Average Solar Mass by Number of Stars in System</h5> 
+    <div class="col-md-6">
+
+        <h5>Average Solar Mass by Number of Stars in System</h5> 
         <img src="/static/img/star_mass_in_system.png">
-        <p class="card-text">As more stars gather together, the more massive they tend to be!</p>
-      </div>
+        <p>As more stars gather together, the more massive they tend to be!</p>
+
     </div>
-    </div>
-    </div>
+</div>
 
 
   <div class = row>
-  <div class="col-lg-12">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">How does Temperature and Mass relate to Specral Class?</h5>
+  <div class="col-md-12">
+
+        <h5>How does Temperature and Mass relate to Specral Class?</h5>
         <img src="/static/img/temp_mass_spectral_class.png">
-        <p class="card-text">Our sun is a G-class star. This analysis shows See which stars are sun-like </p>
-      </div>
-    </div>
+        <p>Our sun is a G-class star. This analysis shows See which stars are sun-like </p>
+
+
   </div>
 </div>
 
 
 <div class="row">
-  <div class="col-lg-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">How does the number of Celestial Bodies Influence Habitability?</h5>
-        <img src="/static/img/habitable_related_to_number_of_bodies.png">
-        <p class="card-text">Steady increase of habitable planets till you get to 2 stars. Binary star system is apex of habitable planets. Habitable systems also tend to have more planets, while more than 3 stars leads to uninhabitable conditions. </p>
-      </div>
-    </div>
-  </div>
+    <div class="col-md-6 zoom2">
 
-  <div class="col-lg-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">How far away are habitable planets?</h5>
-        <img src="/static/img/habitable_planets_related_to_distance.png">
-        <p class="card-text"> Thankfully most habitable systems are closer to us on average than the non habitable! Even better is that the closest have multiple planets in their system. Generally it is better to have more planets nearby for resources, expansion, and astroid protection.</p>
-      </div>
+        <h5>How does the number of Celestial Bodies Influence Habitability?</h5>
+        <img src="/static/img/habitable_related_to_number_of_bodies.png">
+        <p>Steady increase of habitable planets till you get to 2 stars. Binary star system is apex of habitable planets. Habitable systems also tend to have more planets, while more than 3 stars leads to uninhabitable conditions. </p>
+      
     </div>
-  </div>
+
+    <div class="col-md-6 zoom1">
+        <h5>How far away are habitable planets?</h5>
+        <img src="/static/img/habitable_planets_related_to_distance.png">
+        <p> Thankfully most habitable systems are closer to us on average than the non habitable! Even better is that the closest have multiple planets in their system. Generally it is better to have more planets nearby for resources, expansion, and astroid protection.</p>
+    </div>
 </div>
 
 <div class = "row">
-  <div class="col-lg-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">How does planet count and star mass relate? </h5>
+  <div class="col-md-12">
+        <h5>How does planet count and star mass relate? </h5>
         <img src="/static/img/habitability_related_to_stellar_mass.png">
-        <p class="card-text">Slightly smaller stars than the sun tend to be more habitable and more planets leads to more life.  </p>
-      </div>  
-    </div>
+        <p>Slightly smaller stars than the sun tend to be more habitable and more planets leads to more life.  </p>
   </div>
 </div>
   
 
 <div class = "row">
   <div class="col-lg-12">
-    <div class="card">
-      <div class="card-body">
-        <h1 class="card-title">Conclusion </h1>
-        
-        <p class="card-text">The universe is a infinate plane of exploration. As we search the stars it will be valuable to know where we should concentrate our efforts. Smaller binary systems with multiple planets are the best candidates as we conduct our search.  </p>
+
+        <h1>Conclusion </h1> 
+        <p>The universe is a infinate plane of exploration. As we search the stars it will be valuable to know where we should concentrate our efforts. Smaller binary systems with multiple planets are the best candidates as we conduct our search.  </p>
         <p>We have proven through this project that Machine learning can and should be used to assist our efforts in analyzing this huge amount of data</p>
         <p>XGboost is a hugely usefull library in this field and is currently our best tool using machine learning to analyze the celestial bodies that surround us.</p>
-      </div>  
-    </div>
   </div>
 </div>
-  
+</div>
 
 
 <script src="/static/js/test.js"></script>
