@@ -9,6 +9,9 @@ nav {
 }
 
 img {
-	width: 600px;
-	height: 600px;
+	width: 550px;
+	height: 500px;
+}
+.row{margin-right: -15px;
+	margin-left: -15px;
 }
